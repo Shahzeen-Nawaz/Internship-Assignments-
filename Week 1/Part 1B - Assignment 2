@@ -1,0 +1,14 @@
+Installation of Visual Studio Code (VS Code)
+
+1. Download Installer
+- Visit the [Visual Studio Code website]-(https://code.visualstudio.com/).
+- Download the installar for your system.
+
+2. Run Installer
+- Open the downloaded `.exe` file.
+- Follow the installation prompts, accepting the license agreement and selecting installation options.
+
+3. Launch VS Code
+- Once installed, you can find VS Code in your Start menu or search for it using the search bar.
+ 
+After installation, you might want to install additional extensions or configure settings based on your development needs. 
