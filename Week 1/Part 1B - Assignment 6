@@ -1,0 +1,46 @@
+Installation of Numpy
+
+To install NumPy in a Google Colab notebook, use the following code in a code cell:
+
+python
+!pip install numpy
+
+Then press `Shift + Enter` to execute the cell.
+
+
+
+Here’s a short example demonstrating NumPy:
+
+python
+import numpy as np
+
+Create a NumPy array
+array = np.array([1, 2, 3, 4, 5])
+
+Basic operations
+print("Array:", array)
+print("Mean:", np.mean(array))
+print("Sum:", np.sum(array))
+
+Type this into a code cell and press `Shift + Enter` to run it.
+
+
+
+To Invite a friend to collaborate on your Colab notebook:
+
+1. Open the Notebook: 
+Go to the Colab notebook you want to share.
+
+2. Click "Share": 
+Find and click the "Share" button at the top-right corner of the notebook.
+
+3. Enter Email Addresses: 
+In the sharing settings dialog, enter the email addresses of the people you want to invite.
+
+4. Set Permissions: 
+Choose the level of access (Viewer, Commenter, or Editor) for each person.
+
+5. Send Invitation: 
+Click "Send" to invite them.
+
+They will receive an email with a link to the notebook and can access it based on the permissions you set.
