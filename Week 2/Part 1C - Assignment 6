@@ -1,0 +1,146 @@
+Here’s how to navigate the file system using basic command-line commands in both Windows Command Prompt and Linux terminal:
+
+Windows Command Prompt
+
+1. Display the Current Directory:
+   cd
+   - This command shows the path of the current directory.
+
+2. List Files and Directories:
+   dir
+   - Lists all files and directories in the current directory.
+
+3. Change Directory:
+   cd <directory_name>
+   - Changes to the specified directory. For example, cd Documents will navigate to the "Documents" directory.
+
+4. Go Up One Level:
+   cd ..
+   - Moves up one level in the directory structure.
+
+5. Absolute Path Navigation:
+   cd C:\Users\YourUsername\Documents
+   - Navigates directly to the specified absolute path.
+
+Linux Terminal
+
+1. Display the Current Directory:
+   pwd
+   - Prints the current working directory path.
+
+2. List Files and Directories:
+   ls
+   - Lists files and directories in the current directory. Use ls -l for detailed information.
+
+3. Change Directory:
+   cd <directory_name>
+   - Changes to the specified directory. For example, cd Documents will navigate to the "Documents" directory.
+
+4. Go Up One Level:
+   cd ..
+   - Moves up one level in the directory structure.
+
+5. Absolute Path Navigation:
+   cd /home/yourusername/Documents
+   - Navigates directly to the specified absolute path.
+
+Summary
+
+- cd: Change directory.
+- ls (Linux) / dir (Windows): List files and directories.
+- pwd (Linux): Print working directory.
+
+These commands provide the fundamental tools for navigating and managing files in your system's command-line interface.
+
+
+
+Here’s how to create, copy, move, and delete files and directories using command-line commands in both Windows Command Prompt and Linux terminal:
+
+Windows Command Prompt
+
+1. Create a File:
+   echo. > filename.txt
+   - Creates a new file named filename.txt. You can also use type nul > filename.txt or copy nul filename.txt.
+
+2. Create a Directory:
+   mkdir directory_name
+   - Creates a new directory named directory_name.
+
+3. Copy a File:
+   copy source_file.txt 
+   destination_file.txt
+   - Copies source_file.txt to destination_file.txt.
+
+4. Copy a Directory:
+   xcopy source_directory
+   destination_directory /s /e
+   - Copies source_directory to destination_directory, including all subdirectories and files. The /s flag copies directories and subdirectories except empty ones, and the /e flag includes empty directories.
+
+5. Move a File:
+   move source_file.txt
+   destination_directory\
+   - Moves source_file.txt to destination_directory.
+
+6. Move a Directory:
+   move source_directory
+   destination_directory\
+   - Moves source_directory to destination_directory.
+
+7. Delete a File:
+   del filename.txt
+   - Deletes filename.txt.
+
+8. Delete a Directory:
+   rmdir /s /q directory_name
+   - Deletes directory_name and all its contents. The /s flag removes all directories and files within the specified directory, and the /q flag suppresses confirmation prompts.
+
+Linux Terminal
+
+1. Create a File:
+   touch filename.txt
+   - Creates an empty file named filename.txt. You can also use echo "" > filename.txt to create a file with an empty string.
+
+2. Create a Directory:
+   mkdir directory_name
+   - Creates a new directory named directory_name.
+
+3. Copy a File:
+   cp source_file.txt
+   destination_file.txt
+   - Copies source_file.txt to destination_file.txt.
+
+4. Copy a Directory:
+    cp -r source_directory
+    destination_directory
+   - Copies source_directory to destination_directory, including all subdirectories and files. The -r (recursive) flag is required for directories.
+
+5. Move a File:
+   mv source_file.txt
+   destination_directory/
+   - Moves source_file.txt to destination_directory.
+
+6. Move a Directory:
+   mv source_directory
+   destination_directory/
+  - Moves source_directory to destination_directory.
+
+7. Delete a File:
+   rm filename.txt
+  - Deletes filename.txt.
+
+8. Delete a Directory:
+   rm -r directory_name
+   - Deletes directory_name and all its contents. The -r (recursive) flag is required for directories. Use rm -rf directory_name to force delete without confirmation prompts.
+
+Summary
+
+- Create File: echo. > filename.txt (Windows) / touch filename.txt (Linux)
+- Create Directory: mkdir directory_name
+- Copy File: copy source_file.txt destination_file.txt (Windows) / cp source_file.txt destination_file.txt (Linux)
+- Copy Directory: xcopy source_directory destination_directory /s /e (Windows) / cp -r source_directory destination_directory (Linux)
+- Move File: move source_file.txt destination_directory\ (Windows) / mv source_file.txt destination_directory/ (Linux)
+- Move Directory: move source_directory destination_directory\ (Windows) / mv source_directory destination_directory/ (Linux)
+- Delete File: del filename.txt (Windows) / `rm filename.txt (Linux)
+- Delete Directory: rmdir /s /q directory_name (Windows) / rm -r directory_name (Linux)
+
+These commands provide essential file and directory management capabilities from the command line.
