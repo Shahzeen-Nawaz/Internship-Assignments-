@@ -1,0 +1,107 @@
+To create a new branch in your Git repository called "feature-branch," make changes to a file in this branch, and commit them, follow these steps:
+
+1. Open Terminal: Navigate to your Git repository directory.
+
+2. Create a new branch:
+   git checkout -b 
+   feature-branch
+   
+3. Make changes: Edit a file in your repository, for example, `example.txt`.
+
+4. Stage the changes:
+   git add example.txt
+   
+5. Commit the changes:
+   git commit -m "Made changes to example.txt"
+   
+Here’s how the terminal output would look:
+
+1. Create a new branch:
+   $ git checkout -b 
+   feature-branch
+   Switched to a new branch 'feature-branch'
+   
+2. Make changes to `example.txt` (this step is done in a text editor).
+
+3. Stage the changes:
+   $ git add example.txt
+
+4. Commit the changes:
+   $ git commit -m "Made changes to example.txt"
+   [feature-branch abcdefg] Made changes to example.txt
+   1 file changed, 1 insertion(+)
+
+For screenshots, you will need to:
+
+- Open your terminal.
+- Run the commands mentioned above.
+- Take screenshots after each significant command.
+
+You can use the following shortcuts to take screenshots:
+
+- Windows: Press `Win + Shift + S` to open the Snipping Tool.
+- macOS: Press `Cmd + Shift + 4` to capture a selected portion of the screen.
+- Linux: Use `PrtScn` or a screenshot tool like `gnome-screenshot`.
+
+
+
+To merge the "feature-branch" into the main branch, follow these steps:
+
+1. Switch to the main branch:
+   git checkout main
+
+2. Merge the feature-branch into the main branch:
+   git merge feature-branch
+
+3. Resolve conflicts if they occur:
+   - If there are conflicts, Git will indicate which files have conflicts. Open the conflicting files in a text editor and look for conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+   - Manually edit the files to resolve the conflicts by choosing which changes to keep or combining them as necessary.
+   - After resolving conflicts, stage the resolved files:
+   git add <resolved-file>
+
+4. Complete the merge:
+   git commit
+
+Here's a more detailed example:
+
+Step-by-Step Process:
+
+1. Switch to the main branch:
+   $ git checkout main
+   Switched to branch 'main'
+
+2. Merge the feature-branch:
+   $ git merge feature-branch
+
+Example with Conflict Resolution:
+
+Suppose you get a conflict message like this:
+
+Auto-merging example.txt
+CONFLICT (content): Merge conflict in example.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+1. Resolve the conflict:
+   Open `example.txt` in a text editor. You'll see something like:
+   <<<<<<< HEAD
+   Main branch changes
+   =======
+   Feature branch changes
+   >>>>>>> feature-branch
+
+2. Edit the file to resolve the conflict:
+   Combined changes or choose one set of changes
+
+3. Stage the resolved file:
+   $ git add example.txt
+
+4. Complete the merge:
+   $ git commit
+
+Final Check:
+
+Ensure the merge was successful:
+$ git log --oneline --graph
+
+This command helps you visualize the commit history and confirm the merge.
+
