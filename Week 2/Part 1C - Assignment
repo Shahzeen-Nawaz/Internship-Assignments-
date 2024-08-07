@@ -1,0 +1,39 @@
+To understand the architecture of a human pose detection system from an AI research paper, you'll generally need to follow these steps:
+
+1. Choose a Paper:
+   - Look for a paper like "OpenPose" or "PoseNet," which are popular for human pose detection.
+
+2. Read the Introduction:
+   - This section will explain the problem the paper addresses and the significance of the research. It will give you an overview of the objectives and the proposed solution.
+
+3. Understand the Basic Components:
+   - Input: The system takes images or video frames as input.
+   - Output: It predicts the positions of key body parts (like shoulders, elbows, and knees).
+
+4. Review the Architecture:
+   - Feature Extraction:
+       - What It Does: Extracts useful features from the image.
+       - How: Uses layers of a neural network, often convolutional layers.
+   - Pose Estimation:
+       - What It Does: Identifies key body parts and their positions.
+       - How: Predicts heatmaps for each body part. A heatmap is a map showing where the system thinks a body part is located.
+   - Key Point Association:
+       - What It Does: Connects the predicted key points into a complete pose.
+       - How: Uses additional layers or techniques to link body parts correctly.
+
+5. Check the Results:
+   - Look at the results and evaluation section to see how well the system performs. This usually includes accuracy metrics and comparisons to other methods.
+
+Example Summary
+
+- OpenPose:
+    - Input: Images or videos.
+    - Architecture: Uses a CNN to extract features, predicts heatmaps for body parts, and uses Part Affinity Fields (PAFs) to connect the body parts into full poses.
+    - Output: Key points for each body part and their connections.
+
+- PoseNet:
+    - Input: Single images.
+    - Architecture: Uses a CNN to predict the positions of body parts directly.
+    - Output: Coordinates of body parts in the image.
+
+By focusing on these main components—input, feature extraction, pose estimation, key point association, and output—you can grasp the essence of the human pose detection architecture without getting bogged down in technical details.
